@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @if $radius {
+    border-radius: $border-radius;
+  }
+
+  .card-img-top {
+    object-fit: contain;
+  }
+
+  .card-header {
+    background-color: white;
+    padding: 10px 15px;
+
+    .card-title {
+      margin: 0;
+    }
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .card-footer {
+    background-color: white;
+    padding: 10px 15px;
+  }
+}
